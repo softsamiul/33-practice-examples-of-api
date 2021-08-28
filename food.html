@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Yummy Food</title>
+</head>
+
+<body>
+    <h1 class="text-center mt-5 text-success">Welcome To FoodLand</h1>
+    <!-- Food Search area -->
+    <div class="col-md-4 mx-auto">
+        <div class="input-group mb-3 text-center">
+            <input id="search-input" type="text" class="form-control" placeholder="Search Yummy Food Now" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchFood()" class="btn btn-outline-secondary" type="button" id="btn-search">Search</button>
+        </div>
+    </div>
+    <p id="search-err" class="text-center text-danger fs-4 text d-none">Opps!!! Please Enter Something To Search!</p>
+    <!-- Selected food -->
+    <section id="selected-food" class="">
+        <!-- <div class="card mx-auto" style="width: 18rem;">
+            
+        </div> -->
+    </section>
+
+    <!-- Food Search Result area -->
+    <div class="container mt-2">
+        <section>
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="food-show">
+            </div>
+        </section>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Custom script -->
+    <!-- <script src="js/food.js"></script> -->
+    <script src="js/async.js"></script>
+</body>
+
+</html>
